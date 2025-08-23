@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6itjqhfr2vwl"
-path="res://.godot/imported/female sprite idle.png-f99454754dc3f95a876938b60cf442c2.ctex"
+uid="uid://ce2epxs5fa1ra"
+path="res://.godot/imported/female sprite walk down.png-c30d13c4d7c676a31391160030debd64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Spritesheets/female sprite idle.png"
-dest_files=["res://.godot/imported/female sprite idle.png-f99454754dc3f95a876938b60cf442c2.ctex"]
+source_file="res://Assets/Spritesheets/female sprite/female sprite walk down.png"
+dest_files=["res://.godot/imported/female sprite walk down.png-c30d13c4d7c676a31391160030debd64.ctex"]
 
 [params]
 

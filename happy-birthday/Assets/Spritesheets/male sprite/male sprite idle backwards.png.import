@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhpep33bwwao4"
-path="res://.godot/imported/female sprite idle side.png-3f7f72c841b8eb000bb3270018a1bfbe.ctex"
+uid="uid://cw7xqmu4pg4xp"
+path="res://.godot/imported/male sprite idle backwards.png-2f2082a1405578da563a58e8fdf1f499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Spritesheets/female sprite idle side.png"
-dest_files=["res://.godot/imported/female sprite idle side.png-3f7f72c841b8eb000bb3270018a1bfbe.ctex"]
+source_file="res://Assets/Spritesheets/male sprite/male sprite idle backwards.png"
+dest_files=["res://.godot/imported/male sprite idle backwards.png-2f2082a1405578da563a58e8fdf1f499.ctex"]
 
 [params]
 
