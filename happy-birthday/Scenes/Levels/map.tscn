@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhpxn6omfudbd"]
+
+[ext_resource type="Texture2D" uid="uid://ditje4hlp8j42" path="res://Assets/maps/valerio-colonna-map-topdown.jpg" id="1_kx31g"]
+[ext_resource type="PackedScene" uid="uid://bj1rfecjx2iky" path="res://Scenes/Characters/player.tscn" id="1_vykv5"]
+
+[sub_resource type="Animation" id="Animation_vykv5"]
+resource_name = "idle_down"
+length = 0.8
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kx31g"]
+_data = {
+&"idle_down": SubResource("Animation_vykv5")
+}
+
+[node name="map" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_kx31g")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(845, 216)
+scale = Vector2(1.94073, 1.92266)
+texture = ExtResource("1_kx31g")
+
+[node name="Player" parent="." instance=ExtResource("1_vykv5")]
+position = Vector2(459, 469)
+scale = Vector2(0.5, 0.5)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(459, 469)
+scale = Vector2(0.5, 0.5)
