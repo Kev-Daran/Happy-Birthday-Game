@@ -52,6 +52,22 @@ tracks/0/keys = {
 "values": [1, 4]
 }
 
+[sub_resource type="Animation" id="Animation_xi70x"]
+resource_name = "idle_up"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.466667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 3]
+}
+
 [sub_resource type="Animation" id="Animation_37kwy"]
 resource_name = "walk_down"
 loop_mode = 1
@@ -82,22 +98,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [7, 10]
-}
-
-[sub_resource type="Animation" id="Animation_xi70x"]
-resource_name = "idle_up"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.466667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [0, 3]
 }
 
 [sub_resource type="Animation" id="Animation_1t7tx"]
@@ -138,6 +138,7 @@ vframes = 4
 frame = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(33, 3.5)
 shape = SubResource("RectangleShape2D_37kwy")
 

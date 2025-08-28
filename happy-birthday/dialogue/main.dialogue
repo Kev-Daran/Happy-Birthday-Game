@@ -1,0 +1,41 @@
+~ start
+BruVyta: Well well well, so you wanna know what your gift is?
+BruVyta: It's not gonna be easy lil bro.
+
+Grizzle: Make it quick pls.
+
+BruVyta: WOW I'm tryna tell a story here.
+BruVyta: This village is barren. 50k people used to live here and now it's a ghost town.
+
+Grizzle: My camera is too zoomed in for me to see but surely there are less than 50k houses in here.
+
+BruVyta: Irrelevant. One day the inhabitants of this village suddenly disappeared. To find your gift, you must solve the mystery of this village.
+BruVyta: The first step is to look for clues, maybe check if one of the houses has some information.
+
+Grizzle: Do I have to check all of them?
+BruVyta: Yes.
+Grizzle: kys
+=> END
+
+~ door_lock
+
+Grizzle: The door is locked.
+
+=> END
+
+~ door_missing
+
+Grizzle: The door is missing?
+
+Grizzle: Wouldn't it be easier just to add the door back?
+
+Grizzle: Musta been undoor a lotta stress
+
+=> END
+
+~ fence
+
+Grizzle: I will just imagine there are animals in there
+Grizzle: Finding assets that suit a style is hard ):
+
+=> END
