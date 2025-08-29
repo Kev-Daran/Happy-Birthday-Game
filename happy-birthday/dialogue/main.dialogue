@@ -1,20 +1,42 @@
-~ start
-BruVyta: Well well well, so you wanna know what your gift is?
-BruVyta: It's not gonna be easy lil bro.
+~ bruvyta
+if State.status == "INTRO":
+	BruVyta: Oh? you're finally awake?
+	Grizzle: Where am I?
+	BruVyta: Wouldn't you like to know weather boy.
+	BruVyta: The village we stand at is empty. 50,000 people used to live here, now it's a ghost town.
+	Grizzle: Are there really 50,000 houses in this scene?
+	BruVyta: No.
+	BruVyta: What happened to them? Nobody knows. One day, every single one of them vanished.
+	BruVyta: The only way we get out of here is by solving the mystery of this village.
+	Grizzle: Ugh fine, how do we start?
+	BruVyta: Closed enclosure? Stuff on the ground? FIgure it out gang.
+	
+	set State.status = "SPIEL_OVER"
 
-Grizzle: Make it quick pls.
+elif State.status == "SPIEL_OVER":
+	BruVyta: I ain't saying allat again. Just interact with the tools.
+	
+elif State.status == "KEY_FOUND":
+	Grizzle: Can you increase my walking speed?
+	BruVyta: No.
 
-BruVyta: WOW I'm tryna tell a story here.
-BruVyta: This village is barren. 50k people used to live here and now it's a ghost town.
+elif State.status == "TARGET_OPENED":
+	BruVyta: Come let's go up. Go left to right please teehee.
+	
+elif State.status == "HOUSE_FOUND":
+	Grizzle: Is this going to be a series of fetch quests?
+	BruVyta: Hell yeah!
+	
+elif State.status == "TREE_FOUND":
+	Grizzle: Are we there yet.
+	BruVyta: Final stretch!
+	
+elif State.status == "OVER":
+	BruVyta: Happy birthday, my love
 
-Grizzle: My camera is too zoomed in for me to see but surely there are less than 50k houses in here.
+else:
+	BruVyta: Oh wow! An unhandled case? How did you break my game?
 
-BruVyta: Irrelevant. One day the inhabitants of this village suddenly disappeared. To find your gift, you must solve the mystery of this village.
-BruVyta: The first step is to look for clues, maybe check if one of the houses has some information.
-
-Grizzle: Do I have to check all of them?
-BruVyta: Yes.
-Grizzle: kys
 => END
 
 ~ door_lock
@@ -36,6 +58,136 @@ Grizzle: Musta been undoor a lotta stress
 ~ fence
 
 Grizzle: I will just imagine there are animals in there
-Grizzle: Finding assets that suit a style is hard ):
+BruVyta: Finding assets that suit a style is hard ):
 
+=> END
+
+~ door_finale
+BruVyta: Well here we are! Our house.
+BruVyta: Happy Birthday, my love.
+
+set State.status == "OVER"
+=> END
+
+~ barrel
+if State.status == "SPIEL_OVER":
+	Grizzle: Why does only this thing have collisions and nothing else?
+	BruVyta: Don't worry about it dookie.
+
+else:
+	Grizzle: I should talk to the strange man.
+=> END
+
+~ sickle
+if State.status == "SPIEL_OVER":
+	Grizzle: Hmm a sickle, maybe there used to be wheat farms here.
+	BruVyta: Perhaps we are in a farm, would explain the sizeable fence around us too.
+
+else:
+	Grizzle: I should talk to the strange man.
+=> END
+
+~ key
+if State.status == "SPIEL_OVER":
+	BruVyta: Lol did you really think the key would be the answer? It's not that obvious.
+	Grizzle: Please shut up.
+else:
+	Grizzle: I should talk to the strange man.
+=> END
+
+~ pickaxe
+if State.status == "SPIEL_OVER":
+	BruVyta: Lol the other pickaxe is not interactable.
+	Grizzle: You know, being self aware about your game's bugs won't solve its problems.
+	BruVyta: ):
+
+else:
+	Grizzle: I should talk to the strange man.
+=> END
+
+~ rake
+if State.status == "SPIEL_OVER":
+	Grizzle: Oh? A key??
+	BruVyta: Haha maybe the key was indeed the right option.
+	Grizzle: There is a letter here.
+	Grizzle: "It all happened in a flash, I tried to document what I could, but I left my diary at my house."
+	
+	set State.status = "KEY_FOUND"
+	Grizzle: Whoa! Where'd the fence go? 
+	BruVyta: Guess we need to find the person's house.
+	Grizzle: There's a lot of houses, can you give me a hint.
+	BruVyta: No.
+	Grizzle: Kys.
+
+else:
+	Grizzle: I should talk to the strange man.
+=> END
+
+~ door_open
+if State.status == "KEY_FOUND":
+	Grizzle: Omg it opened. Wait why can't I go in.
+	BruVyta: Oh you thought I'd make another level? That's adoorable.
+	Grizzle: What is wrong with you?
+	BruVyta: Go on read the person's diary.
+	Grizzle: Wow, that's a breach of privacy.
+	BruVyta: They're long gone.
+	Grizzle: Shi you right.
+	Grizzle: "It was so weird, as if we were living in two seasons at once."
+	Grizzle: "It was spring, yet there were autumn trees growing all over the place."
+	Grizzle: "Half of the village had wooden furniture and half of the village was crafted in stone."
+	Grizzle: "Did 2 time periods clash all of a sudden? All I know is that it started when the autumn trees arrived."
+		
+	set State.status = "HOUSE_FOUND"
+else:
+	BruVyta: I SAID THERE IS NO OTHER LEVEL!!!
+=> END
+
+~ green_tree
+if State.status == "HOUSE_FOUND":
+	BruVyta: I'm not a biologer, but I'm pretty sure autumn trees are not green.
+else:
+	BruVyta: We ain't looking for trees fam.
+=> END
+
+~ golden_tree
+if State.status == "HOUSE_FOUND":
+	Grizzle: Hmm nothing here.
+else:
+	BruVyta: We ain't looking for trees fam.
+=> END
+
+~ actual_tree
+if State.status == "HOUSE_FOUND":
+	Grizzle: Omg what is this? It's a box with a picture and a letter.
+	BruVyta: [INSERT PICTURE OF VILLAGE CHIEF AND OTHERS HERE]
+	BruVyta: That was awkward
+	Grizzle: Whatevs, the letter says
+	Grizzle: "One day a person suddenly appeared and asked us to empty the village."
+	Grizzle: "He possessed a great deal of power, he changed landscapes on a whim."
+	Grizzle: "When we asked what he wanted, he simply said he wants to send a message."
+	Grizzle: "So he created an area for himself."
+	Grizzle: "It was always tough living right at the equator, the moist part would rot the wood."
+	Grizzle: "So we decided on moving our village to somewhere more stable."
+	Grizzle: "We pretended it was an emergency evacuation cus we thought it'd be funny."
+	Grizzle: "If you're reading this, you need to head to the town square."
+	BruVyta: Well let's go!
+		
+	set State.status = "TREE_FOUND"
+else:
+	BruVyta: We ain't looking for trees anymore fam.
+=> END
+
+~ target
+if State.status == "TREE_FOUND":
+	BruVyta: Alright, it's time to come clean.
+	BruVyta: I made this whole thing up.
+	Grizzle: Wow what a surprise, who woulda known.
+	BruVyta: Yeah I hid it pretty well innit
+	BruVyta: The thing I wanted you to know is one I have always told you.
+	BruVyta: I love you and I hope we spend our life together in a nice comfy house.
+		
+	set State.status = "TARGET_OPENED"
+
+else:
+	BruVyta: What a peculiar artifact. Is this foreshadowing?
 => END
