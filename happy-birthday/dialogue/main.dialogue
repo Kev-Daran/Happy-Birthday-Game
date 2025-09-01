@@ -63,10 +63,11 @@ BruVyta: Finding assets that suit a style is hard ):
 => END
 
 ~ door_finale
-BruVyta: Well here we are! Our house.
-BruVyta: Happy Birthday, my love.
+if State.status == "TARGET_OPENED":
+	BruVyta: Well here we are! Our house.
+	BruVyta: Happy Birthday, my love.
 
-set State.status == "OVER"
+	set State.status = "OVER"
 => END
 
 ~ barrel

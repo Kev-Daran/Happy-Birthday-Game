@@ -38,6 +38,40 @@ tracks/0/keys = {
 "values": [2, 5]
 }
 
+[sub_resource type="Animation" id="Animation_ojipc"]
+resource_name = "idle_left"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 4]
+}
+
+[sub_resource type="Animation" id="Animation_2k7cl"]
+resource_name = "idle_side"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 4]
+}
+
 [sub_resource type="Animation" id="Animation_xi70x"]
 resource_name = "idle_up"
 length = 0.5
@@ -72,8 +106,8 @@ tracks/0/keys = {
 "values": [6, 9]
 }
 
-[sub_resource type="Animation" id="Animation_1t7tx"]
-resource_name = "walk_up"
+[sub_resource type="Animation" id="Animation_ppk7b"]
+resource_name = "walk_left"
 length = 0.5
 loop_mode = 1
 tracks/0/type = "value"
@@ -86,24 +120,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [8, 11]
-}
-
-[sub_resource type="Animation" id="Animation_2k7cl"]
-resource_name = "idle_side"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [1, 4]
+"values": [7, 10]
 }
 
 [sub_resource type="Animation" id="Animation_un0qm"]
@@ -123,8 +140,8 @@ tracks/0/keys = {
 "values": [7, 10]
 }
 
-[sub_resource type="Animation" id="Animation_ojipc"]
-resource_name = "idle_left"
+[sub_resource type="Animation" id="Animation_1t7tx"]
+resource_name = "walk_up"
 length = 0.5
 loop_mode = 1
 tracks/0/type = "value"
@@ -137,24 +154,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [1, 4]
-}
-
-[sub_resource type="Animation" id="Animation_ppk7b"]
-resource_name = "walk_left"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [7, 10]
+"values": [8, 11]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2k7cl"]
