@@ -50,7 +50,7 @@ BruVyta: → YourName:
 Grizzle: → PartnerName:
 ```
 
-### 2. Customize the Love Message
+### 2. Customize the Final Message
 
 **Key dialogue sections to personalize**:
 
