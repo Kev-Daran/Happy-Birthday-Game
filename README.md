@@ -119,3 +119,11 @@ The game uses a global `State.status` variable to track progress:
 This project is open source.
 
 ## Screenshots
+<img width="849" height="754" alt="image" src="https://github.com/user-attachments/assets/8ffa86a7-f258-4311-975d-aa474608e954" />
+
+<img width="1898" height="993" alt="image" src="https://github.com/user-attachments/assets/0f4156b0-62dd-4e1b-8017-889a738859e5" />
+
+<img width="1452" height="644" alt="image" src="https://github.com/user-attachments/assets/5ebb8850-1cdc-4a9b-8ddc-3c502063afe4" />
+
+
+*Original game created as a personal birthday gift*
