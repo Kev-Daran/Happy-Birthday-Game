@@ -127,3 +127,5 @@ This project is open source.
 
 
 *Original game created as a personal birthday gift*
+
+Map tiles is Tiny Town by Kenney : [https://kenney.nl/assets](https://kenney.nl/assets/tiny-town)
