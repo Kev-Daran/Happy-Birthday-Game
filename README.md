@@ -20,7 +20,7 @@ A cute 2D adventure game made with Godot 4 as a personalized birthday gift! Play
 
 2. **Clone/Download this repository**:
    ```bash
-   git clone [your-repo-url]
+   git clone [[your-repo-url]](https://github.com/Kev-Daran/Happy-Birthday-Game.git)
    ```
 
 3. **Open in Godot**:
